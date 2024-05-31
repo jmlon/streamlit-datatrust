@@ -6,7 +6,7 @@ os.environ["TOKENIZERS_PARALLELISM"] = "false"
 import streamlit as st 
 from rag_agent import run_query
 
-st.title("Zotero chatbot")
+st.title("Datatrust chatbot")
 
 st.sidebar.write('Groq configuration')
 st.sidebar.selectbox('LLM Model', [os.getenv("GROQ_MODEL"), 'llama3-8b-8192'])

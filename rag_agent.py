@@ -19,7 +19,7 @@ from langchain_pinecone import PineconeVectorStore
 
 
 index_name = "datatrust"
-# index_name = "test03-index"
+
 
 # LLM
 # llm = ChatOpenAI(model=os.getenv("OPENAI_MODEL"), temperature=0)
