@@ -23,7 +23,9 @@ index_name = "datatrust"
 
 # LLM
 # llm = ChatOpenAI(model=os.getenv("OPENAI_MODEL"), temperature=0)
-llm = ChatGroq(model_name=st.secrets["GROQ_MODEL"], temperature=0)
+llm = ChatGroq(
+    api_key=st.secrets["GROQ_API_KEY_ZOT"],
+    model_name=st.secrets["GROQ_MODEL"], temperature=0)
 
 # Embeddings model
 EMBEDDINGS_MODEL = 'BAAI/bge-base-en-v1.5'                      # Ranking 8, 768
